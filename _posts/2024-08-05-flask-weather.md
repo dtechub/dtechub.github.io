@@ -106,6 +106,11 @@ if __name__ == '__main__':
 </html>
 ```
 - TODO: add CSS styling
+```css
+a {
+    backgroud-color: red;
+}
+```
 
 - Run the application with `python app.py` or `py -m flask --app app run`. The web application should be accessible at `http:127.0.0.1:5000`.
 
