@@ -26,7 +26,7 @@ This series dives into home automation with Raspberry Pi for DIY enthusiasts and
 ## Setting up the Raspberry Pi
 - All the development in this series is done principally on a Linux based OS, e.g., Ubuntu. However, tips will be given for Windows based users. Also, the words "Raspberry Pi" and "Pi" will be used interchangeably. 
 We recommend installing [Visual Studio Code](https://code.visualstudio.com/) as the main IDE.
-- The first step involves flashing a Raspberry Pi operating system (OS) image. Tools like [BalenaEtcher](https://etcher.balena.io/) and [Raspberry Pi Image]() are popular for this purpose. 
+- The first step involves flashing a Raspberry Pi operating system (OS) image. Tools like [BalenaEtcher](https://etcher.balena.io/) and [Raspberry Pi Imager](https://downloads.raspberrypi.org/imager) are popular for this purpose. 
 We use the latter in this series. 
 Download a compatible Raspberry Pi OS image for your board here: [Raspberry Pi OS Downloads](https://www.raspberrypi.com/software/operating-systems/).
 The `lite` versions do not come with an embedded GUI and have less software included (`364MB` vs `2.7GB`).
