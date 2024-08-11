@@ -17,7 +17,7 @@ This series dives into home automation with Raspberry Pi for DIY enthusiasts and
 6. Personalized web control interface
 
 
-## <a name="intro"></a> Introduction to the Raspberry Pi
+##Introduction to the Raspberry Pi
 
 - We will use the Raspberry Pi 3B+.
 
