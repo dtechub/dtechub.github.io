@@ -19,7 +19,7 @@ This series dives into home automation with Raspberry Pi for DIY enthusiasts and
 
 ## Introduction to the Raspberry Pi
 
-- We will use the Raspberry Pi 3B+. ![Pi 3B](imgs/rpi/rpi-3b.png)
+- We will use the Raspberry Pi 3B+. ![Pi 3B](assets/imgs/rpi/rpi-3b.png)
 
 
 ## Setting up the Raspberry Pi
