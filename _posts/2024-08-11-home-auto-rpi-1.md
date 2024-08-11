@@ -49,7 +49,7 @@ A sample result of the scan. THe Pi IP here is `130.125.11.172`
 TODO
 
 ### Connecting to your Pi
-` Run the command ssh `pi@pi-IP-address` or `ssh pi@pi-homeauto`. For example:
+Run the command ssh `pi@pi-IP-address` or `ssh pi@pi-homeauto`. For example:
 ```bash
 ssh pi@130.125.11.172
 ```
