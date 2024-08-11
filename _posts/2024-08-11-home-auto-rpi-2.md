@@ -47,10 +47,10 @@ For analog input, you will need an analog to digital converter (ADC). Some examp
 - To let the LED blink, we create a loop in which we set the LED pin to HIGH and LOW consecutively.
 ```Python
 while True:                          # Endless Loop
-    GPIO.output(pinLED, GPIO.HIGH)   # Turn on
+    GPIO.output(ledPin, GPIO.HIGH)   # Turn on
     print(LED on)                    # Prints state to console
     sleep(1)                         # Pause for 1 second
-    GPIO.output(pinLED, GPIO.LOW)    # Turn off
+    GPIO.output(ledPin, GPIO.LOW)    # Turn off
     print(LED off)                   # Prints state to console
     sleep(1)                         # Pause for 1 second
 ```
