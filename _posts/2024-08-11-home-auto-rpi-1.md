@@ -1,5 +1,5 @@
 ---
-title: Home automation with Raspberry Pi: Part 1
+title: Home automation with Raspberry Pi - Part 1
 author: petman
 date: 2024-08-11 09:10:00 +0800
 categories: [Raspberry Pi, Home automation, Electronics, DIY]
@@ -9,7 +9,7 @@ render_with_liquid: false
 
 This series dives into home automation with Raspberry Pi for DIY enthusiasts and electronics hobbyists. It is sudivided into 5 parts:
 1. [Introduction to the Raspberry Pi](#introduction-to-the-raspberry-pi)
-2. Controlling Raspberry Pi GPIO(https://dtechub.github.io/posts/home-auto-rpi-2/)
+2. [Controlling Raspberry Pi GPIO](https://dtechub.github.io/posts/home-auto-rpi-2/)
 3. Sensors: temperature and humidity, passive infrared, ultrasonic 
 3. Automating lights
 4. Controlling Tapo cameras
