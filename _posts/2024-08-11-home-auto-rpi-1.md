@@ -7,7 +7,7 @@ tags: [pi, home auto, diy]
 render_with_liquid: false
 ---
 
-This series dives into home automation with Raspberry Pi for DIY enthusiasts and electronics hobbyists. It is sudivided into 5 parts:
+This series dives into home automation with Raspberry Pi for DIY enthusiasts and electronics hobbyists. It is subdivided into 5 parts:
 1. [Introduction to the Raspberry Pi](https://dtechub.github.io/posts/home-auto-rpi-1)
 2. [Controlling Raspberry Pi GPIO](https://dtechub.github.io/posts/home-auto-rpi-2/)
 3. Sensors: temperature and humidity, passive infrared, ultrasonic 
@@ -19,8 +19,7 @@ This series dives into home automation with Raspberry Pi for DIY enthusiasts and
 
 ## Introduction to the Raspberry Pi
 
-- We will use the Raspberry Pi 3B+.
-
+- We will use the Raspberry Pi 3B+. ![Pi 3B](imgs/rpi/rpi-3b.png)
 
 
 ## Setting up the Raspberry Pi
