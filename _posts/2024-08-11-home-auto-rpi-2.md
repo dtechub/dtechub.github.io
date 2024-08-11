@@ -10,7 +10,7 @@ render_with_liquid: false
 ## Raspberry Pi GPIO
 - One very powerful feature of the Raspberry Pi is the set of General-Purpose Input/Output (GPIO) pins, which act as an interface between the Pi and the outside world. These allow sensors and actuators to be connected and controlled by the Pi.
 - The Pi 3B has `40` GPI pins as shown in the following picture.
-![Pi 3B pinout](assets/imgs/rpi/pi-3b-pinout.png)
+![Pi 3B pinout](assets/imgs/rpi/pi-3b-pinout.jpg)
 - To identify the GPIO pins, run the `pinout` command inside your Pi's terminal.
 
 > All sensors work on 3.3V logic; so no sensors should be used that work on 5V. No more than 3.3V should be supplied to a GPIO pin.
