@@ -8,7 +8,7 @@ render_with_liquid: false
 ---
 
 This series dives into home automation with Raspberry Pi for DIY enthusiasts and electronics hobbyists. It is sudivided into 5 parts:
-1. [Introduction to the Raspberry Pi](#introduction-to-the-raspberry-pi)
+1. [Introduction to the Raspberry Pi](https://dtechub.github.io/posts/home-auto-rpi-1)
 2. [Controlling Raspberry Pi GPIO](https://dtechub.github.io/posts/home-auto-rpi-2/)
 3. Sensors: temperature and humidity, passive infrared, ultrasonic 
 3. Automating lights
