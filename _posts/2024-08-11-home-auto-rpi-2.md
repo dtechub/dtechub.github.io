@@ -25,18 +25,18 @@ touch piauto.py
 ```
 - Open this folder in VS Code SSH allowing to edit the Python script.
 - In your Python script, import the `RPI.GPIO` module used to control GPIO pins.
-```Python
+```python
 import RPi.GPIO as GPIO
 from time import sleep 
 ```
 - Declare the pin scheme: this defines how the GPIO pins are numbered. There are two modes: `BCM mode` which refers to the pins by the Broadcom SoC Channel number; in simple language the pin numbering is exactly as shown in the output of the pinout command (GPIOxx). Thee second mode: `BOARD mode` means the pin numbering follows the numbering on the plug, i.e., the numbers printed on the board, e.g,. P1 etc. We will use the BCM mode.
 
-```Python
+```python
 GPIO.setmode(GPIO.BCM)
 ```
 - Declaring the pin mode: this is similar to pin mode declarations when programming micro-controllers like the Arduino. Each GPIO pin can be either input or output. If you wish to control an LED for example, set the pin mode to `OUTPUT`. On the other hand, if the pin is to be used as an input pin (e.g., for a temperature sensor) set it as an `INPUT pin`. We will use pin GPIO14 (see pinout diagram) as an output pin to control our LED. NB: there is nothing special about GPIO pin 14, you can pick any other GPIO pin. We chose pin 14 because it is next to a ground pin (GND) which we need to complete the circuit.
 
-```Python
+```python
 ledPin = 14
 GPIO.setup(ledPin,GPIO.OUT)
 ```
@@ -45,7 +45,8 @@ To read the status of a GPIO pin, use `digitalRead(pin)`. You can use software p
 To add delays use `time.sleep(delay-in-seconds)`, e.g., `time.sleep(0.5)`. You can use PCM to dim LEDs.
 For analog input, you will need an analog to digital converter (ADC). Some examples of ADC chips: MCP3008, ADS1x15
 - To let the LED blink, we create a loop in which we set the LED pin to HIGH and LOW consecutively.
-```Python
+
+```python
 while True:                          # Endless Loop
     GPIO.output(ledPin, GPIO.HIGH)   # Turn on
     print(LED on)                    # Prints state to console
