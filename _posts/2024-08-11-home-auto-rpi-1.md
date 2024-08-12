@@ -68,7 +68,7 @@ ssh pi@192.168.1.123
 You should now have a remote connection to your Pi.
 - Update your source lists and install useful packages
 ```bash
-sudo apt update && sudo apt install git -y
+sudo apt update && sudo apt install git python3-pip -y 
 ```
 
 ### Remote development with VS Code

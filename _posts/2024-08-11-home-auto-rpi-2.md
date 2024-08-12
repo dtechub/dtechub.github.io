@@ -23,6 +23,13 @@ render_with_liquid: false
 mkdir homeauto
 touch piauto.py
 ```
+- Create a virtual environment and install useful Python modules. As seen in previous posts, creating a Python virtual environment isolates our project's dependencies from other system dependencies.
+```bash
+sudo apt install python3-virtualenv          # install virtualenv package systemwide
+virtualenv homeautoenv                       # creates virtual environment
+source homeautoenv/bin/activate              # activate virtual environment
+pip3 install RPi.GPIO                        # install RPi.GPIO module in virtual environment
+```
 - Open this folder in VS Code SSH allowing to edit the Python script.
 - In your Python script, import the `RPI.GPIO` module used to control GPIO pins.
 ```python
@@ -32,9 +39,10 @@ from time import sleep
 - Declare the pin scheme: this defines how the GPIO pins are numbered. There are two modes: `BCM mode` which refers to the pins by the Broadcom SoC Channel number. In simple language, this means the pin numbering is exactly as shown in the output of the pinout command (`GPIOxx`). Thee second mode: `BOARD mode` means the pin numbering follows the numbering on the plug, i.e., the numbers printed on the board, e.g,. P1 etc. We use the BCM mode.
 
 ```python
-GPIO.setmode(GPIO.BCM)
+
 ```
-- Declaring the pin mode: this is similar to pin mode declarations when programming micro-controllers like the Arduino. Each GPIO pin can be either input or output. If you wish to control an LED for example, set the pin mode to `OUTPUT`. On the other hand, if the pin is to be used as an input pin (e.g., for a temperature sensor) set it as an `INPUT pin`. We will use pin GPIO14 (see pinout diagram) as an output pin to control our LED. NB: there is nothing special about GPIO pin 14, you can pick any other GPIO pin. We chose pin 14 because it is next to a ground pin (GND) which we need to complete the circuit.
+- Declaring the pin mode: this is similar to pin mode declarations when programming micro-controllers like the Arduino. Each GPIO pin can be either input or output. If you wish to control an LED for example, set the pin mode to `OUTPUT`. On the other hand, if the pin is to be used as an input pin (e.g., for a temperature sensor) set it as an `INPUT pin`. We will use pin GPIO14 (see pinout diagram) as an output pin to control our LED. NB: there is nothing special about GPIO pin 14, you can pick any other GPIO pin. We chose pin 14 because it is next to a ground pin (GND) which we need to complete the circuit. 
+- Connect the LED to this pin using a bread-board. The anode (longer leg: +) of the LED should be connected to a resistor (e.g., 220 Ohm) to reduce the current flowing into the LED. The cathode (shorter leg: -) should be connected to a ground pin (GND) on the Pi board.
 
 ```python
 ledPin = 14
@@ -49,10 +57,10 @@ For analog input, you will need an analog to digital converter (ADC). Some examp
 ```python
 while True:                          # Endless Loop
     GPIO.output(ledPin, GPIO.HIGH)   # Turn on
-    print(LED on)                    # Prints state to console
+    print("LED on")                  # Prints state to console
     sleep(1)                         # Pause for 1 second
     GPIO.output(ledPin, GPIO.LOW)    # Turn off
-    print(LED off)                   # Prints state to console
+    print("LED off")                 # Prints state to console
     sleep(1)                         # Pause for 1 second
 ```
-- Execute the script with `python piauto.py`
+- Execute the script with `python3 piauto.py`
