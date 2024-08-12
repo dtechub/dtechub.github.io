@@ -19,14 +19,14 @@ This series dives into home automation with Raspberry Pi for DIY enthusiasts and
 
 
 ## Introduction to the Raspberry Pi
-- A Raspberry Pi is a series of small single-board credit card-sized computers developed by the [Raspberry Pi Foundation](https://www.raspberrypi.org/about/). Raspberry Pis run on Linux OS, and have many interesting applications comprising simple learning projects to complex industrial automation and robotics, and is a common platform for electronics hobbyists and engineers. In this series, we will build a home automation platform based on Raspberry Pi.
+- Raspberry Pi is a series of small single-board credit card-sized computers developed by the [Raspberry Pi Foundation](https://www.raspberrypi.org/about/). Raspberry Pi boards run on Linux OS, and have many interesting applications comprising simple learning projects to complex industrial automation and robotics, and is a common platform for electronics hobbyists and engineers. In this series, we will build a home automation platform based on Raspberry Pi.
 - Raspberry Pi components: A Raspberry Pi board features a CPU, RAM, USB ports, WiFi and Bluetooth (depending on the model), as well as on-chip SPI, I2C, I2S, and UART peripherals, which are used to integrate different sensors and modules.
 Raspberry Pis come in different models: model 3B, 4B, etc. In this series, we use the Raspberry Pi 3B+. Nevertheless, things should work (with minor changes) on a more recent models like model 4B.
 The following image highlights some of the hardware components that comprise a Raspberry Pi 3B board. ![Pi 3B](assets/imgs/rpi/rpi-3b.png)
 
 
 ## Setting up the Raspberry Pi
-- All the development in this series is done principally on a Linux based OS, e.g., Ubuntu. However, tips will be given for Windows based users. Also, the words "Raspberry Pi" and "Pi" will be used interchangeably. 
+- All the development in this series is done principally on a Linux based OS, e.g., Ubuntu. However, tips will be given for Windows based users. In this series, the words "Raspberry Pi" and "Pi" will be used interchangeably to describe a single Raspberry Pi based board.
 We recommend installing [Visual Studio Code](https://code.visualstudio.com/) as the main IDE.
 - The first step involves flashing a Raspberry Pi operating system (OS) image. Tools like [BalenaEtcher](https://etcher.balena.io/) and [Raspberry Pi Imager](https://downloads.raspberrypi.org/imager) are popular for this purpose. 
 We use the latter in this series. 
