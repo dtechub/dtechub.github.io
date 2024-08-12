@@ -13,12 +13,12 @@ render_with_liquid: false
 ![Pi 3B pinout](assets/imgs/rpi/pi-3b-pinout.jpg)
 - To identify the GPIO pins, run the `pinout` command inside your Pi's terminal.
 
-> All sensors work on 3.3V logic; so no sensors should be used that work on 5V. No more than 3.3V should be supplied to a GPIO pin.
+> The GPIO pins operate on 3.3V logic. As such no sensors that operate at 5V logic should be used.
 {: .prompt-warning }
 
 ## GPIO programming
 - The Pi GPIO can be programmed with a high-level language like Python or low-level language like C or C++.  Though C provides much faster performance, Python has more support compared to C: ready-made data structures, algorithms, and modules/libraries, etc. which can easily be used as building blocks. For this reason we stick to Python for GPIO programming. In addition, using Python makes its easier to integrate Web frameworks like Flask when building a control dashboard.
-- As a simple example, we will write a simple program to blink an LED. Create a folder `homeauto` and a Python script `piauto.py` in that directory.
+- As an example, we will write a simple program to blink an LED. Create a folder `homeauto` and a Python script `piauto.py` in that directory.
 ```bash
 mkdir homeauto
 touch piauto.py
@@ -29,7 +29,7 @@ touch piauto.py
 import RPi.GPIO as GPIO
 from time import sleep 
 ```
-- Declare the pin scheme: this defines how the GPIO pins are numbered. There are two modes: `BCM mode` which refers to the pins by the Broadcom SoC Channel number; in simple language the pin numbering is exactly as shown in the output of the pinout command (GPIOxx). Thee second mode: `BOARD mode` means the pin numbering follows the numbering on the plug, i.e., the numbers printed on the board, e.g,. P1 etc. We will use the BCM mode.
+- Declare the pin scheme: this defines how the GPIO pins are numbered. There are two modes: `BCM mode` which refers to the pins by the Broadcom SoC Channel number. In simple language, this means the pin numbering is exactly as shown in the output of the pinout command (`GPIOxx`). Thee second mode: `BOARD mode` means the pin numbering follows the numbering on the plug, i.e., the numbers printed on the board, e.g,. P1 etc. We use the BCM mode.
 
 ```python
 GPIO.setmode(GPIO.BCM)
