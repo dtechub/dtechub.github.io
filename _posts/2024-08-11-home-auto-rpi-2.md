@@ -49,7 +49,7 @@ GPIO.setup(ledPin,GPIO.OUT)
 ```
 - Connect the LED to this pin using a bread-board as shown in the following sketch. The anode (longer leg: +) of the LED should be connected to a resistor (e.g., 220 Ohm) to reduce the current flowing into the LED. The cathode (shorter leg: -) should be connected to a ground pin (GND) on the Pi board. 
 
-![Pi 3B pinout](assets/imgs/rpi/rpi-blink.png)
+![Pi 3B pinout](assets/imgs/rpi/rpi-blink.png){: width="200" height="200"}
 
 
 - **GPIO states**: You can set the state of a GPIO output pin high (3.3V) or low (0V). Use `GPIO.output(pin,GPIO.HIGH)` or `GPIO.output(pin,GPIO.LOW)` to set it high or low respectively.
