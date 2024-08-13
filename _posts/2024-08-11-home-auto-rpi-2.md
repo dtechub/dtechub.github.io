@@ -41,14 +41,18 @@ from time import sleep
 ```python
 GPIO.setmode(GPIO.BCM)
 ```
-- Declaring the pin mode: this is similar to pin mode declarations when programming micro-controllers like the Arduino. Each GPIO pin can be either input or output. If you wish to control an LED for example, set the pin mode to `OUTPUT`. On the other hand, if the pin is to be used as an input pin (e.g., for a temperature sensor) set it as an `INPUT pin`. We will use pin GPIO14 (see pinout diagram) as an output pin to control our LED. NB: there is nothing special about GPIO pin 14, you can pick any other GPIO pin. We chose pin 14 because it is next to a ground pin (GND) which we need to complete the circuit. 
-- Connect the LED to this pin using a bread-board. The anode (longer leg: +) of the LED should be connected to a resistor (e.g., 220 Ohm) to reduce the current flowing into the LED. The cathode (shorter leg: -) should be connected to a ground pin (GND) on the Pi board.
+- **Pin modes**: The pin mode defines the behaviour of a GPIO pin as an input or output pin. If you wish to control an LED for example, set the pin mode to `OUTPUT`. On the other hand, if the pin is to be used as an input pin (e.g., for a temperature sensor) set it as an `INPUT pin`. We will use pin GPIO14 (see pinout diagram) as an output pin to control our LED. NB: there is nothing special about GPIO pin 14, you can pick any other GPIO pin. We chose pin 14 because it is next to a ground pin (GND) which we need to complete the circuit. 
 
 ```python
 ledPin = 14
 GPIO.setup(ledPin,GPIO.OUT)
 ```
-- GPIO states: you can set the state of a GPIO output pin high (3.3V) or low (0V). Use `GPIO.output(pin,GPIO.HIGH)` or `GPIO.output(pin,GPIO.LOW)` to set it high or low respectively.
+- Connect the LED to this pin using a bread-board as shown in the following sketch. The anode (longer leg: +) of the LED should be connected to a resistor (e.g., 220 Ohm) to reduce the current flowing into the LED. The cathode (shorter leg: -) should be connected to a ground pin (GND) on the Pi board. 
+
+![Pi 3B pinout](assets/imgs/rpi/rpi-blink.png)
+
+
+- **GPIO states**: You can set the state of a GPIO output pin high (3.3V) or low (0V). Use `GPIO.output(pin,GPIO.HIGH)` or `GPIO.output(pin,GPIO.LOW)` to set it high or low respectively.
 To read the status of a GPIO pin, use `digitalRead(pin)`. You can use software pull-up or pull-down functions to ensure a well-defined state on a pin.
 To add delays use `time.sleep(delay-in-seconds)`, e.g., `time.sleep(0.5)`. You can use PCM to dim LEDs.
 For analog input, you will need an analog to digital converter (ADC). Some examples of ADC chips: MCP3008, ADS1x15

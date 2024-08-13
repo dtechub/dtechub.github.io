@@ -26,7 +26,7 @@ The following image highlights some of the hardware components that comprise a R
 
 
 ## Setting up the Raspberry Pi
-- All the development in this series is done principally on a Linux based OS, e.g., Ubuntu. However, tips will be given for Windows based users. In this series, the words "Raspberry Pi" and "Pi" will be used interchangeably to describe a single Raspberry Pi based board.
+- All the development in this series is done principally on a Linux based OS, i.e., Ubuntu. However, tips will be given for Windows based users. In this series, the words "Raspberry Pi" and "Pi" will be used interchangeably to describe a single Raspberry Pi based board.
 We recommend installing [Visual Studio Code](https://code.visualstudio.com/) as the main IDE.
 - The first step involves flashing a Raspberry Pi operating system (OS) image. Tools like [BalenaEtcher](https://etcher.balena.io/) and [Raspberry Pi Imager](https://downloads.raspberrypi.org/imager) are popular for this purpose. 
 We use the latter in this series. 
