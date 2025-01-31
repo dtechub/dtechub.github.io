@@ -8,7 +8,7 @@ render_with_liquid: false
 ---
 
 If you haven't been living under a rock for the past couple of years, you're probably familiar with terms like `ChatGPT` or `DeepSeek`. 
-These are popular `artificial intelligence` models which have recently taken the internet by storm. The more technical term for these AI models is `large language models` (LLMs), which belong to a specific family of machine learning models designed for [natural language processing](https://www.ibm.com/think/topics/natural-language-processing) tasks such as text generation, summarization, and language translation.
+These are popular *artificial intelligence*  models which have recently taken the internet by storm. The more technical term for these AI models is **large language models** (LLMs), which belong to a specific family of machine learning models designed for [natural language processing](https://www.ibm.com/think/topics/natural-language-processing) tasks such as text generation, summarization, and language translation.
 
 The purpose of this post is not to delve into the theory behind LLMs as there are a myriad of articles out there that already cover this. 
 Rather, we will focus on how to download and interact with some of the most popular LLMs directly from a PC terminal.
@@ -33,7 +33,7 @@ ollama run deepseek-r1
 ![DeepSeek R1 Linux Prompt](assets/imgs/llms/deepseek-ollama.png)
 
 - Enter a query like `what is an LLM` and DeepSeek will generate a response for you!
-![DeepSeek what is an LLM? ](assets/imgs/llms/deepseek-ollama.png)
+![DeepSeek what is an LLM? ](assets/imgs/llms/deepseek-what-is-an-llm.png)
 
 - To summarize a large text file, do:
 
