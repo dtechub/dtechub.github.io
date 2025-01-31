@@ -43,14 +43,25 @@ ollama run deepseek-r1 "Summarize the following text:" < document.txt
 
 - To use other models like [Microsoft's Phi4](https://ollama.com/library/phi4) or [Meta's LLama3](https://ollama.com/library/llama3.3), just head to [Ollama](https://ollama.com/search) and find the exact name to use with `ollama run`.
   
-- Personally, I find this approach way cooler than opening a web page every time I need to run queries. Even better, you can have multiple models available offline!
+- Personally, I find this approach way cooler than opening a web page every time I need to run queries. Even better, you can have multiple models available offline! 
 
+> If you're concerned about privacy, running LLMs locally can be a great option, as it allows you to avoid sending data to cloud services where you have no control over who accesses or handles it.
+{: .prompt-warning }
+
+
+## Model sizes
+- If you visited the [Ollama website](https://ollama.com/search), you have likely noticed that the models have various sizes. 
+![DeepSeek R1 sizes](assets/imgs/llms/deepseek-7b.png).
+
+For example, DeepSeek R1 is available in multiple sizes:  `1.5b`, `7b`, ..., `671b`. These numbers represent the number of **parameters** in the model. So `1.5b` corresponds to the smallest model with **1.5 billion parameters**, while `671b` is the largest model with **671 billion** parameters. A helpful way to understand these numbers is to think of them as analogous to "IQ scores"--the larger the number, the "smarter" the model, and vice versa. 
+
+- That said, running the largest DeepSeek R1 models (like `671b1`) requires additional hardware like [GPUs]() to handle the computational load. For a regular CPU-only computer, it's best to stick with the smaller models, ranging from `1.5b` to around `32b`. 
 
 ## Ollama commands
 - Here are other practical commands for using Ollama.
   
 ```bash
-ollama pull <model-name> # downloads the model to your local system without running it
+ollama pull <model-name> # Downloads the model to your local system without running it
 ollama list              # Lists all downloaded models
 ollama rm <model-name>   # Removes/deletes the model locally
 Ctrl + C                 # Stops text generation by the model  
@@ -77,5 +88,7 @@ print(response['message']['content'])
 > To use a different model, simply change the value in `model= ` to the target model. For example, setting `model='llama3'` will use Meta's `LLaMA3` model instead.
 {: .prompt-info }
 
-- I'm sure you'll agree that this is really a fun way to experiment with AI models!!. In the next tutorial, we will build a simple web search application that runs on a local model.
+- I'm sure you'll agree that this is really a fun way to experiment with AI models!!. If you are not comfortable with the terminal or CLI, I suggest you go for a tool like [LM Studio](https://lmstudio.ai/) which allows you to download and interact with LLMs via a user-friendly GUI.
+
+- In the next tutorial, we will build a simple web search application that runs on a local model.
 

@@ -34,8 +34,7 @@ Download a compatible Raspberry Pi OS image for your board here: [Raspberry Pi O
 The `lite` versions do not come with an embedded GUI and have less software included (`500MB` vs `2.7GB`).
 We will use the lite version `Raspberry Pi OS Lite` (July 4th 2024 in my case), and connect to our Pi over the network via SSH (since no lite versions have no GUI by default).
 - Download Pi imager: `sudo snap install rpi-imager`. For windows, download here: [Pi imager](https://downloads.raspberrypi.org/imager/imager_latest.exe)
-- Launch Pi imager and follow the instructions to setup your Pi's: SSH username (e.g., `pi`), network hostname (e.g., `pi-homeauto`), password (use a strong but easy to remember password), and WiFi credentials.
-- If need be, use `Ctrl + Shift + X` to open the SSH and Wifi configuration prompt in Pi imager.
+- Launch Pi imager and follow the instructions to setup your Pi's: SSH username (e.g., `pi`), network hostname (e.g., `pi-homeauto`), password (use a strong but easy to remember password), and WiFi credentials. When asked if you `would like to apply OS customization settings`, choose `edit settings`. Otherwise, use `Ctrl + Shift + X` to open the SSH and Wifi configuration prompt in Pi imager.
 - Flash the Pi OS on the SD card. After flashing, nmount and remove the microSD card from your PC, insert it into your Pi board and power up the board insert SD card into your PI and power up it up. Raspberry Pi OS will use the above configurations at boot time to automatically configure WiFi and SSH access to your Pi. A green LED flashing means the Pi has completed booting and is ready to be accessed over SSH.
 
 ### Getting your Pi IP address
