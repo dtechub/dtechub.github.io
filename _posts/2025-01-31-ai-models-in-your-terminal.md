@@ -53,7 +53,7 @@ ollama run deepseek-r1 "Summarize the following text:" < document.txt
 - If you visited the [Ollama website](https://ollama.com/search), you have likely noticed that the models have various sizes. 
 ![DeepSeek R1 sizes](assets/imgs/llms/deepseek-7b.png)
 
-For example, DeepSeek R1 is available in multiple sizes:  `1.5b`, `7b`, ..., `671b`. These numbers represent the number of **parameters** in the model. So `1.5b` corresponds to the smallest model with **1.5 billion parameters**, while `671b` is the largest model with **671 billion** parameters. A helpful way to understand these numbers is to think of them as analogous to "IQ scores"--the larger the number, the "smarter" the model, and vice versa. 
+For example, DeepSeek R1 is available in multiple sizes:  `1.5b`, `7b`, ..., `671b`. These numbers represent the **number of parameters** in the model. So `1.5b` corresponds to the smallest model with **1.5 billion parameters**, while `671b` is the largest model with **671 billion parameters**. A helpful way to understand these numbers is to think of them as analogous to "IQ scores"--the larger the number, the "smarter" the model, and vice versa. 
 
 - That said, running the largest DeepSeek R1 models (like `671b`) requires additional hardware like [GPUs](https://www.ibm.com/think/topics/gpu) to handle the computational load. For a regular CPU-only computer, it's best to stick with the smaller models, ranging from `1.5b` to around `32b`. 
 
