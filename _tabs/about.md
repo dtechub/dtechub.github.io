@@ -7,6 +7,7 @@ order: 4
 
 <!-- - `The Tech Hub` ("DTechHub") is a programming and technology blog created by [Nouha Ben](#) and [Peterson Yuhala](https://yuhala.github.io/). Nouha is a science undergrad and Peterson is a software engineer with a PhD in Computer Science.-->
 - `The Tech Hub` ("DTechHub") is a blog dedicated to sharing insights, tutorials, and latest developments in programming, electronics, and emerging technologies. Whether you're a seasoned developer or a hobbyist in electronics, you'll find valuable content to help you learn, innovate, and stay updated.
+- The [TEEs for Dummies](/tees/) series covers how to set up and test confidential computing technologies such as Intel SGX, Intel TDX, AMD SEV-SNP, Arm TrustZone, Arm CCA, and RISC-V PMP.
 
 - If you'd like to contribute an article to The Tech Hub, follow these steps:
 
